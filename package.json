@@ -2,12 +2,16 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^6.4.1"
+    "lerna": "^6.4.1",
+    "npm-run-all": "^4.1.5"
   },
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "copy:commons": "lerna exec --stream  -- 'mkdir -p ./node_modules/@pagopa/io-functions-commons/openapi/ &&  cp -r ../../node_modules/@pagopa/io-functions-commons/openapi ./node_modules/@pagopa/io-functions-commons/'"
+    "copy": "npm-run-all copy:*",
+    "copy:commons": "lerna exec --stream  -- 'mkdir -p ./node_modules/@pagopa/io-functions-commons/openapi/ &&  cp -r ../../node_modules/@pagopa/io-functions-commons/openapi ./node_modules/@pagopa/io-functions-commons/'",
+    "prebuild": "yarn copy",
+    "build": "lerna run build --stream"
   }
 }
