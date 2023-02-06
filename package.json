@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^6.4.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "copy:commons": "lerna exec --stream  -- 'mkdir -p ./node_modules/@pagopa/io-functions-commons/openapi/ &&  cp -r ../../node_modules/@pagopa/io-functions-commons/openapi ./node_modules/@pagopa/io-functions-commons/'"
+  }
+}

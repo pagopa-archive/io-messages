@@ -1,0 +1,12 @@
+[submodule "packages/io-functions-messages-cqrs"]
+	path = packages/io-functions-messages-cqrs
+	url = https://github.com/pagopa/io-functions-messages-cqrs
+[submodule "packages/io-functions-app-messages"]
+	path = packages/io-functions-app-messages
+	url = https://github.com/pagopa/io-functions-app-messages
+[submodule "packages/io-functions-service-messages"]
+	path = packages/io-functions-service-messages
+	url = https://github.com/pagopa/io-functions-service-messages
+[submodule "packages/io-functions-commons"]
+	path = packages/io-functions-commons
+	url = https://github.com/pagopa/io-functions-commons
