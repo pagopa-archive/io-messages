@@ -10,3 +10,6 @@
 [submodule "packages/io-functions-commons"]
 	path = packages/io-functions-commons
 	url = https://github.com/pagopa/io-functions-commons
+[submodule "packages/ts-commons"]
+	path = packages/ts-commons
+	url = https://github.com/pagopa/io-ts-commons
