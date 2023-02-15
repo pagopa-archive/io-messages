@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "copy": "npm-run-all copy:*",
-    "copy:commons": "lerna exec --stream  -- 'mkdir -p ./node_modules/@pagopa/io-functions-commons/openapi/ &&  cp -r ../../node_modules/@pagopa/io-functions-commons/openapi ./node_modules/@pagopa/io-functions-commons/'",
+    "copy:commons": "lerna exec --stream  -- '[ -d ./node_modules/@pagopa/io-functions-commons/openapi ] && (mkdir -p ./node_modules/@pagopa/io-functions-commons/openapi/ &&  cp -r ../../node_modules/@pagopa/io-functions-commons/openapi ./node_modules/@pagopa/io-functions-commons/)'",
     "prebuild": "yarn copy",
     "build": "lerna run build --stream"
   }
